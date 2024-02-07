@@ -1,0 +1,21 @@
+<div class="bg-background min-h-screen flex flex-col items-center justify-center">
+
+  <div class="flex justify-center items-center pb-2">
+    <img class="w-32 md:w-40" src="../../../images/logo-prati-branco-sem-risco.svg" alt="">
+  </div>
+
+  <div class="flex flex-col items-center justify-center mt-5">
+    <div class="max-h-screen">
+      <div class="mb-3">
+        <label for="cpf" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">CPF</label>
+        <input type="text" id="cpf" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block p-2.5 w-72 focus:outline-none" placeholder="000.000.000-00" maxlength="14" [(ngModel)]="cpf" (ngModelChange)="formatarCPF()">
+      </div>
+      <div class="mb-5">
+        <label for="senha" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Senha</label>
+        <input type="password" id="senha" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block p-2.5 w-full focus:outline-none" placeholder="*******">
+      </div>
+    </div>
+    <button class="bg-background border text-white text-sm rounded-lg block p-2.5 w-full focus:outline-none hover:bg-purple-400" (click)="navigationHome()">Acessar</button>
+    <a href="#" class="text-sm text-white mt-2">Solicitar nova senha</a>
+  </div>
+</div>
